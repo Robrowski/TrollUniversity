@@ -4,7 +4,11 @@ Tools to learn
 - gmail API
 - Google drive API - OCR
 - text app    - SMS txt   - pygooglevoice = Google Voice for Python
+- google calendar api
 
+
+Collecting emails to scan
+- forwarding potential free food to the gmail account
 
 
 Email Scanning
@@ -29,7 +33,7 @@ Email Scanning
 		
 - Time of food
 - Time sent
-- Calendar!!
+- Calendar!!  --- Built in txting API
 	- public calendar for trolls to use
 	
 	
