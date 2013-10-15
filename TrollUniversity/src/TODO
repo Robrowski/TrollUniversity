@@ -5,6 +5,7 @@ Tools to learn
 - Google drive API - OCR
 - text app    - SMS txt   - pygooglevoice = Google Voice for Python
 - google calendar api
+- Google App Engine Backend Jobs
 
 
 Collecting emails to scan
@@ -29,7 +30,10 @@ Email Scanning
 	- OCR is the image put as an attachment in gmail?
 	- Scanning for the following words
 		- free, food, pizza, provided
-		
+	
+- Run scanner once every (duration) on the backend, indefinitley
+	- Checks the inbox for new messages
+	- Sends alerts
 		
 - Time of food
 - Time sent
