@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="google-site-verification" content="exUNd2wO4MqiwFbV_QYYo9FPZVuimQA_Egidy13UsgI" />
+        <title>Troll University!</title>
+    </head>
+    <body>
+        Welcome to Troll University. The Troll University 
+        is a movement that Matt Costi and I are founding. 
+        Students enrolled will be provided training in troll 
+        theory, practice and ethics. There is no tuition. 
+        Support will be provided for trolls in the form of multiple 
+        web apps contained in this repository.
+        <br>
+        <br>
+        Testing message retrieval:
+        {% for message in messages %}
+                <div>{{message.get_body()}}</div>
+            {% endfor %}
+    </body>
+</html>
