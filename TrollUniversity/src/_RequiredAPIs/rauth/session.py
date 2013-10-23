@@ -12,13 +12,13 @@ from hashlib import sha1, md5
 from random import random
 from time import time
 
-from rauth.compat import quote, parse_qsl, urljoin, urlsplit, is_basestring
-from rauth.oauth import HmacSha1Signature
-from rauth.utils import (absolute_url, CaseInsensitiveDict, ENTITY_METHODS,
+from _RequiredAPIs.rauth.compat import quote, parse_qsl, urljoin, urlsplit, is_basestring
+from _RequiredAPIs.rauth.oauth import HmacSha1Signature
+from _RequiredAPIs.rauth.utils import (absolute_url, CaseInsensitiveDict, ENTITY_METHODS,
                          FORM_URLENCODED, get_sorted_params,
                          OPTIONAL_OAUTH_PARAMS)
 
-from requests.sessions import Session
+from _RequiredAPIs.requests.sessions import Session
 
 OAUTH1_DEFAULT_TIMEOUT = OAUTH2_DEFAULT_TIMEOUT = OFLY_DEFAULT_TIMEOUT = 300.0
 

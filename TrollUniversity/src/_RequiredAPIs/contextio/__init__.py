@@ -39,7 +39,7 @@ message = Message(account, {'id': 'MESSAGE_ID'})
 import logging
 import re
 
-from rauth import OAuth1Session
+from _RequiredAPIs.rauth import OAuth1Session
 from urllib import urlencode, quote
 
 from util import as_bool, as_datetime, process_person_info, uncamelize

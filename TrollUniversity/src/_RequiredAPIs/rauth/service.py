@@ -6,9 +6,9 @@
     Provides OAuth 1.0/a, 2.0 and Ofly service containers.
 '''
 
-from rauth.compat import urlencode
-from rauth.session import OAuth1Session, OAuth2Session, OflySession
-from rauth.utils import ENTITY_METHODS, parse_utf8_qsl
+from _RequiredAPIs.rauth.compat import urlencode
+from _RequiredAPIs.rauth.session import OAuth1Session, OAuth2Session, OflySession
+from _RequiredAPIs.rauth.utils import ENTITY_METHODS, parse_utf8_qsl
 
 PROCESS_TOKEN_ERROR = ('Decoder failed to handle {key} with data as returned '
                        'by provider. A different decoder may be needed. '

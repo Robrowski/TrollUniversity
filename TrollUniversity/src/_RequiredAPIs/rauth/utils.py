@@ -6,9 +6,9 @@
     General utilities.
 '''
 
-from rauth.compat import parse_qsl, is_basestring
+from _RequiredAPIs.rauth.compat import parse_qsl, is_basestring
 
-from requests.structures import CaseInsensitiveDict as cidict
+from _RequiredAPIs.requests.structures import CaseInsensitiveDict as cidict
 
 FORM_URLENCODED = 'application/x-www-form-urlencoded'
 ENTITY_METHODS = ('POST', 'PUT', 'PATCH')

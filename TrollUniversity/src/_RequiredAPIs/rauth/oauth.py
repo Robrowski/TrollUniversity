@@ -11,8 +11,8 @@ import hmac
 
 from hashlib import sha1
 
-from rauth.compat import is_basestring, quote, urlencode, urlsplit, urlunsplit
-from rauth.utils import FORM_URLENCODED
+from _RequiredAPIs.rauth.compat import is_basestring, quote, urlencode, urlsplit, urlunsplit
+from _RequiredAPIs.rauth.utils import FORM_URLENCODED
 
 
 class SignatureMethod(object):
