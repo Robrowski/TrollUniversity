@@ -1,0 +1,4 @@
+cron:
+- description: checks inbox and sends alerts if an email of interest
+  url: /rescan
+  schedule: every 5 minutes

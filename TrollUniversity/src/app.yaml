@@ -13,3 +13,7 @@ libraries:
 handlers:
 - url: /.*
   script: main_page.application
+  
+- url: /rescan
+  script: main_page.application
+  login: admin

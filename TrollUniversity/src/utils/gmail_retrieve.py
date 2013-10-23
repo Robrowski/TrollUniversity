@@ -15,5 +15,4 @@ def getMessages():
     logging.debug(accounts)
     if accounts:
         account = accounts[0]
-        print(account.get_messages())
         return account.get_messages()
