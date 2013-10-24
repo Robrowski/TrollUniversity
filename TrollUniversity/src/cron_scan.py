@@ -12,13 +12,13 @@ import logging
 
 class CronHandler(webapp2.RequestHandler):
     def get(self):
-        beforeTime = datetime.now() - timedelta(minutes=5)
+        beforeTime = datetime.now() - timedelta(minutes=30)
         afterTime = calendar.timegm(beforeTime.utctimetuple())
         uncheckedMessages = utils.getRecentMessages('trolluniversity.edu@gmail.com',afterTime)
-        for message in uncheckedMessages:
-            subject = message.subject
-            rawBody = message.get_body(type='text/html')
-            if rawBody:
-                dbMessage = Message(subject = subject,
-                                    body = rawBody[0]['content'])
-                dbMessage.put()
+#         for message in uncheckedMessages:
+#             subject = message.subject
+#             rawBody = message.get_body(type='text/html')
+#             if rawBody:
+#                 dbMessage = Message(subject = subject,
+#                                     body = rawBody[0]['content'])
+#                 dbMessage.put()
