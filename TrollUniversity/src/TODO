@@ -1,19 +1,35 @@
 To Troll List
 
+
+COMPLETED:
+- extract subject and body of email from inbox
+- store copy of subject and body into app engine database
+- automatically do this when an email is recieved, through a 
+	webhook that posts to our page
+
+GOALS TO FOCUS ON (more or less in order by importance):
+- Analyzing subject and body of email for free food
+- Design a frontend website to play with
+	- For starters, allow user to signup(enroll) to Troll U
+	  and subscribe free food alerts
+	- Fancy HTLM5 look and feel
+- Send alerts via text messages
+- Learn how to get images/attachments from email and do OCR
+
 Tools to learn
-- gmail API
+X gmail API (context.io)
 - Google drive API - OCR
 - text app    - SMS txt   - pygooglevoice = Google Voice for Python
 - google calendar api
-- Google App Engine Backend Jobs
+X Google App Engine Backend Jobs
 
 
-Collecting emails to scan
-- forwarding potential free food to the gmail account
+X Collecting emails to scan
+X - forwarding potential free food to the gmail account
 
 
 Email Scanning
-- Subject
+X Subject
 	- Use subjects as unique ID's to prevent duplicate scans
 		- ignore FW: RE: etc
 		- lowercase
@@ -26,13 +42,13 @@ Email Scanning
 	- Scanning for the following words
 		- free, food, pizza, provided
 
-- Body
+X Body
 	- OCR is the image put as an attachment in gmail?
 	- Scanning for the following words
 		- free, food, pizza, provided
 	
-- Run scanner once every (duration) on the backend, indefinitley
-	- Checks the inbox for new messages
+X Run scanner once every (duration) on the backend, indefinitley
+	X Checks the inbox for new messages
 	- Sends alerts
 		
 - Time of food
@@ -43,12 +59,15 @@ Email Scanning
 	
 	
 THE WEBSITE
+- **Pick design layout and start building something to play with **
+		-http://html5up.net/ has some really nice ones. I like 'striped'
 - subscribe to meal plan 
 - login page - asks for username only
 - Troll of The Month
 - Ethics Page
 - Course List
 - Trollceratops (have Jason draw that)
+
 
 
 
