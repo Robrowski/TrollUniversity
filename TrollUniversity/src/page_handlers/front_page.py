@@ -9,6 +9,6 @@ from utils import gmail_retrieve as g
 class FrontHandler(base_handler.Handler):
     def get(self):
         
-        messages = g.getMessages()
-        self.render("frontPage.html",
-                    messages = messages)
+#         messages = g.getMessages()
+        self.render("index.html")
+#                     ,messages = messages)
