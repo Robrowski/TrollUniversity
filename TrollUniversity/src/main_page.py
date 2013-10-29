@@ -17,7 +17,18 @@ class WebhookHandler(webapp.RequestHandler):
         rawBody = message['message_data']['body'][0]['content']
         dbMessage = Message(subject = subject,
                             body = rawBody)
+        
+        #process
+        # - normalize the email - removings tags
+        # - check for duplicates
+        
         dbMessage.put()
+        
+        #send notifications via txt etc.
+        
+        
+        
+        
         
 application = webapp.WSGIApplication([('/', front_page.FrontHandler),
                                       ('/rescan',cron_scan.CronHandler),
