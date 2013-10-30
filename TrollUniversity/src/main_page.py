@@ -7,7 +7,6 @@ from models import Message
 
 import json
 import logging
-import cron_scan
 
 class WebhookHandler(webapp.RequestHandler):
     def post(self):
@@ -31,7 +30,6 @@ class WebhookHandler(webapp.RequestHandler):
         
         
 application = webapp.WSGIApplication([('/', front_page.FrontHandler),
-                                      ('/rescan',cron_scan.CronHandler),
                                       ('/webhook',WebhookHandler)], 
                                      debug=True)
 
