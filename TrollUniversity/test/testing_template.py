@@ -12,13 +12,13 @@ import unittest  # This is the main resource
 
 
 # Example resource to test
-from utils.message.processing import remove_tags as tagRemover
+# from utils.message.processing import remove_tags as tagRemover
 
 
 
 
 # Testing class: This is the testing suite
-class Test+NAME_LWIERS:(unittest.TestCase):
+class StupidTest(unittest.TestCase):
     
     # Standard setup: This is the "test fixtures" = setup
     def setUp(self):
@@ -26,11 +26,12 @@ class Test+NAME_LWIERS:(unittest.TestCase):
 
 	# A test case
     # All tests must start with the letters "test" so that PyUnit notices them    
-    def test_RESTOFNAME(self):
+    def test_matt_is_dumb(self):
         empty = ''
         
         # call self."assertion statement"
         self.assertEquals(empty, empty)
+        self.assertTrue(True, "weiner")
 
     
 
