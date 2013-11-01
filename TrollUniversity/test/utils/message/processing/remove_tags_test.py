@@ -53,12 +53,19 @@ class TestRemoveTagsFunctions(unittest.TestCase):
         
         self.assertEquals(tagRemover.remove_tags(toProcess), expected)
  
-    def test_4(self):
+    def test_big_real_message_1(self):
         toProcess = samples.BIG_STRING_1INIT
         
         expected  = samples.BIG_STRING_1FINAL
         self.assertEquals(tagRemover.remove_tags(toProcess), expected)
-
+    
+    def test_big_real_message_2(self):
+        toProcess = samples.BIG_STRING_2INIT
+        
+        expected  = samples.BIG_STRING_2FINAL
+        print "This is the next message that needs addressing..."
+        print tagRemover.remove_tags(toProcess)
+     #   self.assertEquals(tagRemover.remove_tags(toProcess), expected)
         
     
 if __name__ == '__main__':
