@@ -4,6 +4,7 @@ TrollUniversity/src/settings.py
 ## Eclipse
 #################
 
+.pydevproject
 *.pydevproject
 .project
 .metadata
@@ -190,7 +191,7 @@ $RECYCLE.BIN/
 #############
 
 *.py[co]
-
+.pydevproject
 # Packages
 *.egg
 *.egg-info
