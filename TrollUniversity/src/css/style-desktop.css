@@ -173,7 +173,7 @@
 		
 	#sidebar
 	{
-		position: absolute;
+		position: fixed;
 		top: 0;
 		padding: 3em 1.35em 1em 1.15em;
 		height: 100%;
