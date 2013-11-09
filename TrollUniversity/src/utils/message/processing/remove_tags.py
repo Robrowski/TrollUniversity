@@ -6,13 +6,11 @@ Created on Oct 31, 2013
 
 # A method provided to remove html tags froma string
 def remove_tags(string):
-    start = string.find('<')
-    newstring = string
-    while start != -1:
-        end = newstring.find('>', start)
-        newstring = newstring[:start] + " " + newstring[end + 1:]
-        start = newstring.find('<')
-   
+    newstring = remove_stuff_between(string, '<', '>')
+    newstring = remove_stuff_between(newstring, '{', '}')
+    newstring = remove_stuff_between(newstring, '[', ']')
+
+
     # remove extra spaces  
     while "  " in newstring:
         newstring = newstring.replace( "  ", " ");
@@ -21,5 +19,15 @@ def remove_tags(string):
 
 
 
+def remove_stuff_between(string, tagS, tagF):
+    start = string.find(tagS)
+    modified = string
+    
+    while start != -1:
+        end = modified.find(tagF, start)
+        modified = modified[:start] + " " + modified[end + 1:]
+        start = modified.find(tagS)
+
+    return modified
 
 
