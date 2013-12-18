@@ -12,7 +12,7 @@ from utils.message.processing import remove_tags as tagRemover
 class WebhookHandler(webapp.RequestHandler):
     def post(self):
         message = json.loads(self.request.body)
-        logging.error(message['message_data']['body'][0]['content'])
+        logging.error(message)
        
         subject = message['message_data']['subject']
         subject = tagRemover.remove_tags(subject)  # Remove the tags
